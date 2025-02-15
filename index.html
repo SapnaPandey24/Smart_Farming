@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Farming Assistant</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🌱 Smart Farming Assistant</h1>
+        <p>Get real-time irrigation and fertilization recommendations based on weather and satellite data.</p>
+        
+        <label for="location">Enter Your Location:</label>
+        <input type="text" id="location" placeholder="e.g., mumbai">
+        <br>
+        <br>
+        <br>
+        <label for="crop-type">Select Crop Type:</label>
+        <select id="crop-type">
+            <option value="wheat">Wheat</option>
+            <option value="rice">Rice</option>
+            <option value="corn">Corn</option>
+            <option value="soybean">Soybean</option>
+        </select>
+       <br>
+       <br>
+        <button onclick="fetchData()">Get Recommendations</button>
+      
+
+        <div id="results"></div>
+    </div>
+
+    <!-- Load JavaScript at the end -->
+    <script src="script.js"></script>
+</body>
+</html>
